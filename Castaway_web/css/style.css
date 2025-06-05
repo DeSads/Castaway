@@ -1,4 +1,88 @@
-/* import nullstyle  */
+/* import reboot file */
 
-@import url('nullstyle.min.css');
+@import url(../css/nullstyle.min.css);
 
+/*=========== TABLE OF CONTENTS ===========
+          1.
+==========================================*/
+
+/*=============Style css=========*/
+
+/*-------------------------------------
+          1.
+--------------------------------------*/
+
+/* colors */
+
+:root{
+    --color1: #191919;
+    --color2: #118DA8;
+}
+
+/* font */
+
+@font-face {
+    font-family: "DM Sans"; 
+    src: url("../fonts/DMSans.ttf") format("truetype"); 
+    font-style: normal; 
+    font-weight: normal; 
+} 
+
+/* typography */
+
+h1,h2,h3,h4,h5,h6,a,p{
+    font-family: 'DM Sans';
+    color: white;
+}
+p{font-size: 22px;}
+h1{font-size: 79.2px;}
+h2{font-size: 70.4px;}
+h3{font-size: 43.2px;}
+
+/* body */
+
+body{background-color: #191919;}
+
+/* container */
+
+.container {max-width: 1300px; margin: 0 auto;}
+
+/*-------------------------------------
+          2.Header
+--------------------------------------*/
+
+.header {max-height: 119px; padding: 43.3px 0;}
+.header__content{display: flex; justify-content: space-between;}
+.menu-nav {display: flex;}
+.menu-ul{margin-left: 40px;}
+
+/* menu link    */
+
+.menu-ul a{font-size: 17px;}
+.menu-ul a:hover, .menu-ul a:active{color: var(--color2);}
+.menu-ul .active{color: var(--color2);}
+
+/*-------------------------------------
+          3.Home screen
+--------------------------------------*/
+
+.home__content {display: flex; }
+.home__content-image img{width: 100%; height: 100%;}
+
+
+.home__content-title{margin: 294px 0 0 60px;}
+.home__content-title h1{
+    max-width: 526px; 
+    font-size: 70px;
+    font-weight: 300;
+    line-height: 88px;
+}
+.next{
+    font-size: 75px;
+}
+.next::before{
+}
+.level{font-size: 80px; font-weight: bold;}
+.home__content-icons { }
+.icons { }
+.icons__text { }
