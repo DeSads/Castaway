@@ -10,7 +10,9 @@
 ### Добавлю в дальнешйшем
 
 ## Установка и запуск
-''' bash 
-git clone 
+''' 
+bash 
+git clone https://github.com/DeSads/Castaway.git 
 npm install
 npm start
+'''
