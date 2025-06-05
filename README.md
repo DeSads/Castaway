@@ -11,8 +11,7 @@
 
 ## Установка и запуск
 
-```
-bash 
+```bash 
 git clone https://github.com/DeSads/Castaway.git 
 npm install
 npm start
