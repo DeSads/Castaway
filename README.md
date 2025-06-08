@@ -6,7 +6,8 @@
 - HTML, CSS, JavaScript
 - Git
 
-## Скриншоты 
+## Скриншот
+![изображение](https://github.com/user-attachments/assets/a20469bb-55e5-43dd-b52a-9d442d2cbe72)
 
 
 ## Установка и запуск
