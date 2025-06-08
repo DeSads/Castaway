@@ -30,7 +30,7 @@
 
 @font-face {
     font-family: "DM Sans"; 
-    src: url("../fonts/DMSans.ttf") format("truetype"); 
+    src: url('../assets/fonts/DMSans.ttf') format("truetype"); 
     font-style: normal; 
     font-weight: normal; 
 } 
