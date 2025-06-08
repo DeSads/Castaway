@@ -3,13 +3,20 @@
 @import url(../css/nullstyle.min.css);
 
 /*=========== TABLE OF CONTENTS ===========
-          1.
+          1.Root
+          2.Header
+          3.Home screen
+          4.Episode screen
+          5.Jacob screen
+          6.Form screen
+          7.Reviews screen
+          8.Footer screen
 ==========================================*/
 
 /*=============Style css=========*/
 
 /*-------------------------------------
-          1.
+          1.Root
 --------------------------------------*/
 
 /* colors */
@@ -285,7 +292,7 @@ body{background-color: #191919;}
 }
 
 /*-------------------------------------
-          6.Reviews screen
+          7.Reviews screen
 --------------------------------------*/
 
 
@@ -308,7 +315,7 @@ body{background-color: #191919;}
 }
 
 /*-------------------------------------
-          7.Footer screen
+          8.Footer screen
 --------------------------------------*/
 
 /* footer content */
