@@ -14,6 +14,7 @@
 
 ```bash 
 git clone https://github.com/DeSads/Castaway.git 
+cd Castaway/Castaway_web
 npm install
-npm start
+npm run dev 
 ```
