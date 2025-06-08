@@ -30,14 +30,14 @@
 
 /* typography */
 
-h1,h2,h3,h4,h5,h6,a,p{
+h1,h2,h3,h4,h5,h6,a,p,button,ul, .form__input::placeholder{
     font-family: 'DM Sans';
     color: white;
 }
 p{font-size: 22px;}
-h1{font-size: 79.2px;}
-h2{font-size: 70.4px;}
-h3{font-size: 43.2px;}
+h1{font-size: 70px;}
+h2{font-size: 64px;}
+h3{font-size: 36px;}
 
 /* body */
 
@@ -69,20 +69,270 @@ body{background-color: #191919;}
 .home__content {display: flex; }
 .home__content-image img{width: 100%; height: 100%;}
 
+/* home screen text */
 
-.home__content-title{margin: 294px 0 0 60px;}
-.home__content-title h1{
+.home__content-text{margin: 294px 0 0 60px;}
+.home__content-text h1{
     max-width: 526px; 
     font-size: 70px;
     font-weight: 300;
     line-height: 88px;
+    word-wrap: 25px;
+    letter-spacing: 3.2px;
 }
-.next{
-    font-size: 75px;
-}
-/* .next::before{
-} */
+.next{font-size: 75px; margin-right: 15px;}
 .level{font-size: 80px; font-weight: bold;}
-/* .home__content-icons { }
-.icons { }
-.icons__text { } */
+
+/* "listen on" */
+
+.home__content-listen {margin: 90px 0 0 0; }
+.listen__text { font-size: 15px; line-height: 24px}
+.listen__icons {
+    max-width: 235px;
+    margin-top: 16px; 
+    display: flex; 
+    justify-content: space-between; 
+}
+
+/*-------------------------------------
+          4.Episode screen
+--------------------------------------*/
+
+/* episode content */
+
+.episods__content {display: flex;flex-direction: column; }
+.episods__content-header {
+    display: flex; 
+    justify-content: space-between; 
+    margin: 93px 0 66px 0;
+}
+.episods__content-title {
+    letter-spacing: 2.88px; 
+    line-height: 79.2px; 
+}
+.episods__content-button {
+    max-width: 178px;
+    max-height: 51px;
+    padding: 12px 20px;
+    background-color: var(--color2);
+    font-size: 17px;
+    border-radius: 7px;
+}
+.episods__content-cards {
+    display: flex; 
+    flex-direction: column;
+}
+
+/* card content*/
+
+.card__content {display: flex; }
+.card__content-image img {width: 100%; height: 100%;}
+
+.card {
+    max-width: 100%; 
+    max-height: 545px; 
+    background-color: #000; 
+    margin-bottom: 60px; 
+    border-radius: 20px;
+    padding: 40px;
+}
+
+/* card text */
+
+.card__text {margin-left: 53px;}
+.card__text-category {
+    max-height: 27px;
+    border-radius: 5px;
+    background-color:var(--color1);
+    text-align: center; 
+    font-size: 18px;
+}
+.card__text-title{max-width: 611px;}
+.card__text-episode {
+    color: var(--color2); 
+    font-size: 17px; 
+    margin: 48px 0 17px 0;
+}
+.card__text-info {
+    color: rgba(255,255,255, 0.7); 
+    line-height: 33px;
+    margin: 28px 0 18px 0;
+}
+.card__text-button {
+    background-color: var(--color2); 
+    width: 208px; 
+    height: 51px; 
+    font-size: 18px; 
+    border-radius: 5px;
+}
+
+/* ids */
+
+#gear{max-width: 73px;}
+#tips{max-width: 136px;}
+#best-micro{font-size: 57px;}
+
+
+/*-------------------------------------
+          5.Jacob screen
+--------------------------------------*/
+
+/* jacob content */
+
+.jacob__content {display: flex; margin: 200px 0;}
+.jacob__content-image {max-width: 100%; max-height: 100%; }
+.jacob__content-button {
+    width: 112px; 
+    height: 112px;
+    border-radius: 100%;
+    background-color: var(--color2);
+    display: flex;
+    justify-content: center;
+}
+
+/* jacob text */
+
+.jacob__text {
+    display: flex; 
+    flex-direction: column; 
+    max-width: 556px; 
+    margin-right: 94px;
+}
+.jacob__text-pretitle {
+    font-size: 18px; 
+    color: var(--color2);
+    margin-top: 20px;
+}
+.jacob__text-title {
+    font-size: 65px; 
+    letter-spacing: 2.88px; 
+    margin-bottom: 28px;
+}
+.jacob__text-info {color: rgba(255,255,255, 0.7); margin-bottom: 33px; }
+
+/* arrow */
+
+.arrow {padding-top: 50%; position:relative;}
+.line {background-color: white; height: 2px;}
+.bottom-diagonal{
+    rotate: -45deg;
+    position: absolute;
+    width: 25px;
+    top: 65px;
+    left: 49px;
+}
+.up-diagonal {
+    rotate: 45deg;
+    position: absolute;
+    top: 47px;
+    left: 49px;
+    width: 25px;
+}
+.horizontal {width: 71px;}
+
+/*-------------------------------------
+          6.Form screen
+--------------------------------------*/
+
+/* form content */
+
+.form__content {
+    background-color: #000; 
+    width: 100%;
+    padding: 60px 60px 75px 60px;
+    border-radius: 20px;
+    display: flex;
+    justify-content: space-between;
+    margin-bottom: 200px;
+}
+
+/* form text */
+
+.form__text {max-width: 431px; }
+.form__text-pretitle {font-size: 18px; color: var(--color2); }
+.form__text-title {
+    font-size: 72px; 
+    letter-spacing: 2.88px;
+    line-height: 79.2px;
+}
+
+/* form */
+
+.form__content-form {
+    width: 522px; 
+    display: flex;
+    flex-direction: column;
+}
+.form__input {
+    width: 100%;
+    height: 82px;
+    margin-bottom: 20px;
+    border-radius: 5px;
+    background-color: var(--color1);
+    padding: 27px 19px;
+}
+.form__input::placeholder, .form__input{
+    color:rgba(255,255,255, 0.7);
+    font-size: 24px;
+}
+
+.form__submit{
+    background-color: var(--color2);
+    width: 87px;
+    height: 48px;
+    text-align: center;
+    border-radius: 5px;
+}
+
+/*-------------------------------------
+          6.Reviews screen
+--------------------------------------*/
+
+
+.reviews__content{margin-bottom: 200px;}
+.reviews__card:nth-child(5) .reviews__card-name{font-size: 23px;}
+.reviews__card:last-child .reviews__card-reviews{max-width: 317px;}
+.reviews__card-reviews {margin: 21px 0 19px 0; max-width: 313px;}
+.reviews__card-name {font-size: 24px; color: rgba(255,255,255, 0.7);}
+.reviews__content-cards {
+    display: grid;
+    row-gap: 16px;
+    column-gap: 15px;
+    grid-template-rows: 321px 364px;
+    grid-template-columns: 423px 423px 423px; 
+}
+.reviews__card {
+    background-color: #000;
+    padding: 54px 50px 0 50px;
+    border-radius: 10%;
+}
+
+/*-------------------------------------
+          7.Footer screen
+--------------------------------------*/
+
+/* footer content */
+
+.footer__content {
+    display: flex; 
+    max-width: 1083px;
+    justify-content: space-between;
+    padding-bottom: 127px;
+}
+.footer__logos-link {
+    max-width: 92px; 
+    display: flex; 
+    justify-content: space-between;
+    margin-top: 26px;   
+}
+.footer__icons {
+    width: 220px; 
+    display: flex; 
+    justify-content: space-between;
+}
+
+/* pages and documents */
+
+.pages, .documents {font-size: 17px; line-height: 27px;}
+.page, .document {margin-bottom: 10px; }
+
